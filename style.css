@@ -1,0 +1,60 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  font: 11pt/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  hyphens: auto;
+}
+
+main {
+  margin: 1em 0 2em;
+}
+
+h1, h2, h3 {
+  margin: 1em 0 .25em;
+  clear: both;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+#venue {
+  font-size: 1.5em;
+}
+#organizers {
+  list-style: none;
+  padding: 0;
+}
+
+#abstract h2 {
+  display: none;
+}
+#abstract {
+  font-style: italic;
+}
+
+.chair p {
+  margin: 0;
+}
+.chair img {
+  float: right;
+  margin: -1em 0 1em 2em;
+  width: 10em;
+}
+
+@media print {
+  body {
+    font-size: 10pt;
+    text-align: justify;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+@page {
+  margin: 25mm;
+  @bottom-left {
+    content: counter(page) "/" counter(pages);
+  }
+}
